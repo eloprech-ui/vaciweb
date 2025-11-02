@@ -19,13 +19,9 @@ app.get("/", (req, res) => {
 app.use('/usuarios', usuariosRoutes);
 
 // === Iniciar servidor ===
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080; // usar sempre a porta do env ou padrão
 app.listen(PORT, () => {
     console.log(`🚀 Servidor rodando na porta ${PORT}`);
 });
 
-const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Servidor rodando na porta ${PORT}`);
-});
 module.exports = app;
