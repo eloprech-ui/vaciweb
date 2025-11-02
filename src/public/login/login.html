@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - VaciWeb</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <main>
+        <div class="div_caixa">
+            <h1 class="title">VaciWeb</h1>
+            <h2 class="subtitle">Faça seu login</h2>
+
+            <form id="loginForm" onsubmit="return validarLogin(event);">
+                <label for="username">Usuário:</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu e-mail" required>
+
+                <label for="password">Senha:</label>
+                <input type="password" id="senhaLogin" name="password" placeholder="Digite sua senha" required>
+
+                <button type="submit" class="btn_entrar">Entrar</button>
+                <span id="msg" style="color: red;"></span>
+            </form>
+
+            <h2>Não tem conta?</h2>
+            <button type="button" onclick="irParacadastro()" class="cadastro-btn">Cadastrar</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="logo-header">
+            <img src="../img/imagem.png.png" alt="Mascote" class="img-canto" />
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

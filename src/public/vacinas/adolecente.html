@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendário Nacional de Vacinação - Adolescente</title>
+  <link rel="stylesheet" href="../vacinas/adolecente.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <button type="button" onclick="irParaPrincipal()" class="btn-img" id="btnprincipal">
+        <img src="../img/2-removebg-preview.png" alt="logo" class="logo">
+      </button>
+      <div>
+        <h1>Calendário Nacional de Vacinação — Adolescente</h1>
+        <p class="lead">Tabela com idades, vacinas e doenças evitadas (baseado no documento oficial do Ministério da Saúde).</p>
+      </div>
+    </header>
+    <button id="btnVoltar" onclick="irParaPrincipal()">← Voltar</button>
+
+    <section class="card" aria-labelledby="titulo">
+      <h2 id="titulo">Calendário</h2>
+
+      <table role="table" aria-label="Calendário de vacinação do adolescente">
+        <thead>
+          <tr>
+            <th class="idade">Idade</th>
+            <th>Vacina / Dose (esquema)</th>
+            <th>Doenças evitadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="idade">A qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Hepatite B (recombinante)</strong><br>
+              Iniciar ou completar 3 doses, de acordo com situação vacinal.
+            </td>
+            <td>Proteção contra Hepatite B.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">A qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Difteria e Tétano (dT)</strong><br>
+              Iniciar ou completar 3 doses, conforme situação vacinal.<br>
+              Reforço a cada 10 anos, ou a cada 5 anos em caso de ferimentos graves ou contatos de difteria.
+            </td>
+            <td>Proteção contra difteria e tétano.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">A qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Febre Amarela (VFA – atenuada)</strong><br>
+              Dose única, caso não tenha recebido até os 5 anos.<br>
+              Reforço se recebeu uma dose antes dos 5 anos de idade.
+            </td>
+            <td>Proteção contra febre amarela.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">A qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Tríplice viral (SCR)</strong><br>
+              Iniciar ou completar 2 doses, de acordo com a situação vacinal.
+            </td>
+            <td>Proteção contra sarampo, caxumba e rubéola.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">11 a 14 anos</td>
+            <td class="vacinas">
+              <strong>HPV Papilomavírus humano 6, 11, 16 e 18 (HPV4 - recombinante)</strong><br>
+              Dose única* (para adolescentes não vacinados, até 19 anos, 11 meses e 29 dias).<br>
+              Estratégias de resgate para vacinação da dose única.
+            </td>
+            <td>Proteção contra HPV tipos 6, 11, 16 e 18.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">11 a 14 anos</td>
+            <td class="vacinas">
+              <strong>Meningocócica ACWY (MenACWY - Conjugada)</strong><br>
+              Uma dose.
+            </td>
+            <td>Proteção contra meningite meningocócica dos sorogrupos A, C, W e Y.</td>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <img src="../img/movimento vacinaçao.png" alt="Rodapé" width="350" height="160">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="nota">
+        *Para vítimas de abuso sexual, de 9 a 14 anos a recomendação é de duas doses.  
+        De 15 a 45 anos: recomendação de 2 a 3 doses, conforme histórico vacinal.  
+        Pessoas com HIV/aids, transplantadas ou com câncer devem receber 3 doses, com prescrição médica.  
+        Para menores de 18 anos, é necessário consentimento dos responsáveis.
+      </p>
+    </section>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

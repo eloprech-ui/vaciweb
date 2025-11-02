@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendário Nacional de Vacinação - Criança</title>
+  <link rel="stylesheet" href="../vacinas/bebe.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <button type="button" onclick="irParaPrincipal()" class="btn-img" id="btnprincipal">
+      <img src="../img/1-removebg-preview.png" alt="logo" class="logo">
+      </button>
+      <div>
+        <h1>Calendário Nacional de Vacinação — Criança</h1>
+        <p class="lead">Tabela com idades, vacinas e doenças evitadas (baseado no documento oficial).</p>
+      </div>
+    </header>
+    <button id="btnVoltar" onclick="irParaPrincipal()">← Voltar</button>
+
+    <section class="card" aria-labelledby="titulo">
+      <h2 id="titulo">Calendário</h2>
+
+      <table role="table" aria-label="Calendário de vacinação">
+        <thead>
+          <tr>
+            <th class="idade">Idade</th>
+            <th>Vacina / Doenças evitadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="idade">Ao nascer</td>
+            <td class="vacinas">
+              <strong>BCG</strong> — Formas graves da tuberculose (miliar e meníngea)<br>
+              <strong>Hepatite B (recombinante)</strong> — Hepatite B (dose única)
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">2 meses</td>
+            <td class="vacinas">
+              <strong>Penta (Adsorvida DTP + HepB + Hib)</strong> — Difteria, tétano, coqueluche, hepatite B e Haemophilus influenzae B<br>
+              <strong>VIP (Poliomielite inativada)</strong> — Poliomielite<br>
+              <strong>Pneumo 10 (Conjugada)</strong> — Infecções invasivas por Streptococcus pneumoniae (meningite, pneumonia) e otite média<br>
+              <strong>VRH (Rotavírus humano, atenuada)</strong> — Diarreia por rotavírus
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">3 meses</td>
+            <td class="vacinas">
+              <strong>MenB (Meningocócica B)</strong> — Meningite e sepse por Neisseria meningitidis sorogrupo B
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">4 meses</td>
+            <td class="vacinas">
+              Repetição das vacinas aplicadas aos 2 meses (2ª dose): Penta, VIP, Pneumo 10 e VRH.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">5 meses</td>
+            <td class="vacinas">
+              <strong>MenB (Meningocócica B)</strong> — 2ª dose.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">6 meses</td>
+            <td class="vacinas">
+              <strong>Penta</strong> — 3ª dose.<br>
+              <strong>VIP</strong> — 3ª dose.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">12 meses</td>
+            <td class="vacinas">
+              <strong>Pneumo 10</strong> — Reforço.<br>
+              <strong>MenC</strong> — Reforço contra meningite C.<br>
+              <strong>Tríplice viral (SCR)</strong> — Sarampo, caxumba e rubéola.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">15 meses</td>
+            <td class="vacinas">
+              <strong>DTP</strong> — 1º reforço contra difteria, tétano e coqueluche.<br>
+              <strong>VOP</strong> — 1º reforço contra poliomielite (oral).<br>
+              <strong>Hepatite A</strong> — Dose única.<br>
+              <strong>Tetraviral (SCR + Varicela)</strong> — 1ª dose contra varicela.
+            </td>
+          </tr>
+
+          <tr>
+            <td class="idade">4 anos</td>
+            <td class="vacinas">
+              <strong>DTP</strong> — 2º reforço.<br>
+              <strong>VOP</strong> — 2º reforço.<br>
+              <strong>Varicela</strong> — 2ª dose.<br>
+              <strong>Febre amarela</strong> — 1ª dose ou reforço, conforme histórico vacinal.
+            </td>
+          </tr>
+
+          
+          <tr>
+            <td colspan="2">
+             <img src="../img/movimento vacinaçao.png" alt="Rodapé" width="350" height="160">
+            </td>
+          </tr>
+
+
+        </tbody>
+      </table>
+  </div>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendário Nacional de Vacinação - Gestante</title>
+  <link rel="stylesheet" href="../vacinas/gestante.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <button type="button" onclick="irParaPrincipal()" class="btn-img" id="btnprincipal">
+        <img src="../img/4-removebg-preview.png" alt="logo" class="logo">
+      </button>
+
+      <div>
+        <h1>Calendário Nacional de Vacinação — Gestante</h1>
+        <p class="lead">Tabela com vacinas, idades gestacionais e doenças evitadas (baseado no documento oficial do Ministério da Saúde).</p>
+      </div>
+    </header>
+      <button id="btnVoltar" onclick="irParaPrincipal()">← Voltar</button>
+
+    <section class="card" aria-labelledby="titulo">
+      <h2 id="titulo">Calendário</h2>
+
+      <table role="table" aria-label="Calendário de vacinação da gestante">
+        <thead>
+          <tr>
+            <th class="idade">Idade gestacional</th>
+            <th>Vacina / Dose (esquema)</th>
+            <th>Doenças evitadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="idade">A qualquer tempo no pré-natal</td>
+            <td class="vacinas">
+              <strong>Hepatite B (HB - recombinante)</strong><br>
+              Iniciar ou completar 3 doses, a qualquer tempo do pré-natal.
+            </td>
+            <td>Proteção contra Hepatite B.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">A qualquer tempo no pré-natal</td>
+            <td class="vacinas">
+              <strong>Difteria e Tétano (dT)</strong><br>
+              Iniciar ou completar o esquema de 3 doses com vacinas contendo os toxoides de difteria e tétano, a qualquer tempo do pré-natal.*
+            </td>
+            <td>Proteção contra Difteria e Tétano.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">20ª semana de gestação e puérperas até 45 dias</td>
+            <td class="vacinas">
+              <strong>Difteria, Tétano e Pertussis (dTpa - acelular)</strong><br>
+              1 dose a partir da 20ª semana, a cada gestação.**
+            </td>
+            <td>Proteção contra Difteria, Tétano e Coqueluche.</td>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <img src="../img/movimento vacinaçao.png" alt="Rodapé" width="350" height="160">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="nota">
+        * Observar a indicação da vacina dTpa a partir da 20ª semana de gestação.<br><br>
+        ** Se não administrada durante o período gestacional, a dose da vacina dTpa deve ser administrada no puerpério ou o mais breve possível, até 45 dias pós-parto.<br>
+        A vacinação durante a gestação protege contra o tétano neonatal e a coqueluche em recém-nascidos.
+      </p>
+    </section>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

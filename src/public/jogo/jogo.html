@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>VaciWeb — Previna-se contra fake news</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../jogo/jogo.css">
+</head>
+<body>
+  <!-- Confete e animação do Zé Gotinha -->
+  <div id="confetti-container"></div>
+  <img id="ze-gotinha" src="../img/imagem.png.png" alt="Zé Gotinha" style="display:none; position:fixed; bottom:20px; right:20px; width:150px; z-index:999;">
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">VACIWEB</div>
+      <nav class="nav-actions" aria-label="Navegação principal">
+        <button type="button" onclick="irParaPrincipal()" class="nav-btn">Início</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-stripes">
+          <span class="stripe yellow">Fique atento:</span>
+          <span class="stripe blue"><strong>não acredite</strong> em tudo que vê.</span>
+          <div class="stamp">Previna-se contra fake News!</div>
+        </div>
+        <p class="hero-sub">Campanha educativa — checar informação salva vidas.</p>
+      </div>
+    </section>
+
+    <!-- Placar -->
+    <div class="score-container">
+      <div class="score-header">
+        <h2>Placar</h2>
+        <div class="score-info">
+          <span id="score">0/6</span>
+          <button id="resetScore" type="button">Resetar placar</button>
+        </div>
+      </div>
+    </div>
+        <!-- Grid de cards -->
+    <section class="cards-section" aria-label="Quiz de fake news">
+      <div class="cards-grid">
+
+        <!-- Card 1 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">A VACINA DA GRIPE MATA MAIS DO QUE A PRÓPRIA GRIPE.</h3>
+          <p class="explain">Você já ouviu falar que idosos tomam a vacina da gripe e morrem pouco tempo depois? Isso não é coincidência! A composição da vacina muda todo ano e os efeitos colaterais são piores do que a doença.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VOCÊ SABIA QUE A VACINA DA COVID-19 ALTERA O SEU DNA?</h3>
+          <p class="explain">Isso não é só uma vacina. É uma tecnologia de RNA que entra na sua célula e muda seu código genético.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">A VACINA ERRADICOU A VARÍOLA DO MUNDO.</h3>
+          <p class="explain">A varíola foi declarada erradicada pela OMS em 1980 graças às campanhas de vacinação em massa.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">CRIANÇAS QUE TOMAM MUITAS VACINAS DESENVOLVEM AUTISMO.</h3>
+          <p class="explain">Nos anos 90, um estudo apontou ligação mas foi desmentido; associações temporais não significam causalidade.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">ALGUMAS VACINAS SÃO FEITAS USANDO VÍRUS ENFRAQUECIDOS OU MORTOS.</h3>
+          <p class="explain">É uma técnica clássica: exemplos incluem febre amarela (vírus atenuado) e gripe (vírus inativado).</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">QUEM TOMA VACINA CONTRA A COVID PODE VIRAR JACARÉ.</h3>
+          <p class="explain">Boatos extremos afirmam mutações bizarras; não há qualquer evidência científica para isso.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+                <!-- Card 7 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS CAUSAM INFERTILIDADE EM MULHERES.</h3>
+          <p class="explain">Não há qualquer estudo confiável que relacione vacinas com infertilidade; autoridades de saúde monitoram isso continuamente.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS CONTRA POLIOMIELITE AJUDARAM A REDUZIR CASOS GLOBALMENTE.</h3>
+          <p class="explain">A poliomielite quase foi erradicada em grande parte do mundo graças a campanhas massivas de vacinação.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 9 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">A VACINA DA GRIPE CAUSA GRIPE.</h3>
+          <p class="explain">As vacinas contra influenza usam vírus inativado ou partículas do vírus que não provocam a doença.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 10 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS PROTEGEM PESSOAS QUE NÃO PODEM SER VACINADAS.</h3>
+          <p class="explain">Esse é o chamado efeito "imunidade de rebanho", que protege quem tem imunidade baixa ou alergias.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 11 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">TOMAR VACINA ANTES DE VIAJAR AO EXTERIOR É PERIGOSO.</h3>
+          <p class="explain">Vacinas recomendadas para viagens protegem contra doenças locais, sem riscos extras para viajantes saudáveis.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 12 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS PASSAM POR TESTES RIGOROSOS ANTES DE SEREM LIBERADAS.</h3>
+          <p class="explain">Antes da aprovação, vacinas passam por múltiplas fases de testes clínicos e monitoramento constante de efeitos adversos.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 13 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS AJUDAM A REDUZIR COMPLICAÇÕES DE DOENÇAS GRAVES.</h3>
+          <p class="explain">Doenças como tétano, difteria e coqueluche podem ser muito mais perigosas sem vacinação.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 14 -->
+        <article class="card" data-answer="falso">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS CAUSAM DOENÇAS QUE ELAS DEVEM PREVENIR.</h3>
+          <p class="explain">Vacinas são feitas para treinar o sistema imunológico sem causar a doença; efeitos colaterais graves são raros.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+
+        <!-- Card 15 -->
+        <article class="card" data-answer="verdadeiro">
+          <div class="card-top">
+            <div class="browser-dots"><span></span><span></span><span></span></div>
+            <div class="card-title">É FAKE OU NÃO</div>
+          </div>
+          <h3 class="claim">VACINAS AJUDAM A PROTEGER COMUNIDADES INTEIRAS.</h3>
+          <p class="explain">Quando muitas pessoas estão imunizadas, a transmissão de doenças diminui, protegendo toda a população.</p>
+          <div class="card-actions">
+            <button class="btn btn-false">FALSO</button>
+            <button class="btn btn-true">VERDADEIRO</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <img id="trophy" src="../img/trofeu-removebg-preview.png" alt="Troféu" 
+       style="display:none; position:fixed; bottom:40%; left:50%; transform:translateX(-50%);
+              width:150px; z-index:9999; animation: bounce 1s ease infinite;">
+
+  <script src="../js/jogo.js"></script>
+</body>
+</html>

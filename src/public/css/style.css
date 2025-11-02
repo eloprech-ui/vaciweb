@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+/* Cabeçalho */
+header {
+padding: 0;
+box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+width: 100%;
+position: relative;
+background: #3299CC;
+
+;
+color: #fff;
+ }
+.header-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+        }
+.logo-titulo {
+margin: 0;
+font-size: 28px;
+color: black;
+font-family: 'Anton', sans-serif; 
+text-align: left;
+ }
+
+        /* Navegação */
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        button.cadastre-se, 
+        button.inicio-btn {
+            color: black;
+            background: rgba(0, 74, 173, 0.59);
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: color 0.2s, background 0.2s;
+            gap: 8px;
+        }
+        button.cadastre-se:hover,
+        button.inicio-btn:hover {
+            color: white;
+            background: #004aad;
+        }
+        .icon-cadastro {
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+            width: 15px;
+            height: 20px;
+        }
+
+        /* Mascote + título (texto de baixo) */
+        .mascote-container {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            gap: 64px;
+            padding-left: 64px;
+        }
+        .logo-header {
+            height: 180px;
+            width: 180px;
+            object-fit: contain;
+        }
+        .mascote-titulo {
+            text-align: center;
+            font-family: 'Anton', sans-serif;
+            font-size: 30px;
+            color: #222;
+            font-weight: bold;
+            margin: 40px auto 0 auto;
+            letter-spacing: 1px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .mascote-titulo span {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .mascote-texto-baixo {
+            font-size: 25px;
+            color: #333;
+            text-align: center;
+            margin: 40px auto 0 auto;
+            max-width: 1000px;
+            line-height: 1.2;
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-weight: 400;
+        }
+
+        /* Texto introdutório */
+        .texto-intro {
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 20px;
+            color: black;
+            margin: 20px auto;
+            text-align: center;
+            font-weight: 400;
+            max-width: 800px;
+            line-height: 1.5;
+        }
+
+        /* Subtítulo */
+        .titulo-secundario {
+            font-family: 'Anton', sans-serif;
+            font-size: 24px;
+            color: #0074d9; /* azul destacado */
+            font-weight: bold;
+            margin: 40px 0 15px 0;
+            text-align: center;
+        }
+
+        /* Texto descritivo */
+        .texto-descritivo {
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 18px;
+            color: black;
+            text-align: center;
+            margin: 0 auto 40px auto;
+            max-width: 900px;
+            line-height: 1.6;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #3299CC;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            font-size: 14px;
+            color: black;
+        }

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendário Nacional de Vacinação - Adulto e Idoso</title>
+  <link rel="stylesheet" href="../vacinas/adultoidoso.css">
+</head>
+<body>
+
+  <div class="wrap">
+    <header>
+      <button type="button" onclick="irParaPrincipal()" class="btn-img" id="btnprincipal">
+        <img src="../img/3-removebg-preview.png" alt="logo" class="logo">
+      </button>
+      <div>
+        <h1>Calendário Nacional de Vacinação — Adulto e Idoso</h1>
+        <p class="lead">Tabela com idades, vacinas e doenças evitadas (baseado no documento oficial do Ministério da Saúde).</p>
+      </div>
+    </header>
+    <button id="btnVoltar" onclick="irParaPrincipal()">← Voltar</button>
+
+    <section class="card" aria-labelledby="titulo">
+      <h2 id="titulo">Calendário</h2>
+
+      <table role="table" aria-label="Calendário de vacinação do adulto e idoso">
+        <thead>
+          <tr>
+            <th class="idade">Idade</th>
+            <th>Vacina / Dose (esquema)</th>
+            <th>Doenças evitadas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="idade">Idade adulta — a qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Hepatite B (recombinante)</strong><br>
+              3 doses, de acordo com histórico vacinal.
+            </td>
+            <td>Proteção contra Hepatite B.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">Idade adulta — a qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Difteria e Tétano (dT)</strong><br>
+              Iniciar ou completar 3 doses, de acordo com situação vacinal.<br>
+              Reforço a cada 10 anos, ou a cada 5 anos em caso de ferimentos graves ou contatos de difteria.
+            </td>
+            <td>Proteção contra Difteria e Tétano.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">Idade adulta — a qualquer tempo</td>
+            <td class="vacinas">
+              <strong>Febre Amarela (VFA – atenuada)</strong><br>
+              Dose única caso não tenha recebido nenhuma dose até os 5 anos.<br>
+              Reforçar se recebeu uma dose antes dos 5 anos de idade.
+            </td>
+            <td>Proteção contra Febre Amarela.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">9 a 45 anos</td>
+            <td class="vacinas">
+              <strong>HPV Papilomavírus humano 6, 11, 16 e 18 (HPV4 – recombinante)</strong><br>
+              Recomendado para homens e mulheres vítimas de violência sexual (15 a 45 anos).<br>
+              Esquema de 3 doses: 1ª dose, 2ª após 2 meses, e 3ª após 6 meses da 1ª dose.
+            </td>
+            <td>Proteção contra HPV tipos 6, 11, 16 e 18.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">20 a 29 anos</td>
+            <td class="vacinas">
+              <strong>Tríplice viral (SCR)</strong><br>
+              Duas doses.<br>
+              Verificar situação vacinal anterior.
+            </td>
+            <td>Proteção contra Sarampo, Caxumba e Rubéola.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">30 a 59 anos</td>
+            <td class="vacinas">
+              <strong>Tríplice viral (SCR)</strong><br>
+              Uma dose.<br>
+              Verificar situação vacinal anterior.
+            </td>
+            <td>Proteção contra Sarampo, Caxumba e Rubéola.</td>
+          </tr>
+
+          <tr>
+            <td class="idade">A partir de 18 anos</td>
+            <td class="vacinas">
+              <strong>dTpa – Difteria, Tétano e Coqueluche (acelular)</strong><br>
+              Uma dose.<br>
+              Reforço a cada 10 anos ou 5 anos em caso de ferimentos graves.
+            </td>
+            <td>Proteção contra Difteria, Tétano e Coqueluche.</td>
+          </tr>
+
+          <tr>
+            <td colspan="3">
+              <img src="../img/movimento vacinaçao.png" alt="Rodapé" width="350" height="160">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>

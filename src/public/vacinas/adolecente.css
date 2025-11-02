@@ -1,0 +1,133 @@
+:root {
+  /* Cores principais do projeto */
+  --bg: #c4e6f2;           /* Cor de fundo da página */
+  --card: #ffffff;         /* Cor de fundo dos cartões/tabelas */
+  --accent: #0b63a5;       /* Cor de destaque (azul principal) */
+  --muted: white;        /* Cor de texto secundário */
+  --table-border: #d1d5db; /* Cor da borda da tabela */
+  /* Fonte padrão do projeto */
+  --font-main: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #0f172a;
+  font-family: var(--font-main);
+}
+
+.wrap {
+  max-width: 1100px;
+  margin: 16px auto;   /* menos espaço externo */
+  padding: 10px;       /* menos espaço interno */
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;            /* menos espaço entre logo e texto */
+  margin-bottom: 8px;  /* menos espaço abaixo do header */
+}
+
+.logo {
+  width: 220px;        /* ajuste o tamanho conforme desejar */
+  height: 220px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 10px;       /* menos espaço interno */
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+thead th {
+  background: linear-gradient(90deg, rgba(11, 99, 165, 0.06), rgba(44, 130, 191, 0.03));
+  text-align: left;
+  padding: 12px 10px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--table-border);
+}
+
+tbody td {
+  padding: 12px 10px;
+  vertical-align: top;
+  border-bottom: 1px solid var(--table-border);
+}
+
+tr:nth-child(even) td {
+  background: rgba(11, 99, 165, 0.02);
+}
+
+.idade {
+  width: 160px;
+  font-weight: 600;
+}
+
+.vacinas {
+  white-space: pre-wrap;
+}
+
+
+/* Responsividade */
+@media (max-width: 720px) {
+  .age { width: 140px; }
+  thead th { font-size: 14px; }
+  body { padding: 8px; }
+}
+
+/* Impressão */
+@media print {
+  body { background: #fff; }
+  .wrap { max-width: 100%; margin: 0; padding: 0; }
+  header .logo { display: none; }
+  .card { box-shadow: none; border-radius: 0; padding: 6px; }
+  thead th, tbody td { padding: 6px; }
+}
+#btnprincipal {
+    width: 200px;
+    height: 250px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#btnprincipal:hover {
+    transform: scale(1.1);
+}
+
+#btnprincipal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#btnVoltar {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 8px 16px;
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#btnVoltar:hover {
+    background-color: #094a7a; /* tom mais escuro do azul */
+    transform: scale(1.05);
+}

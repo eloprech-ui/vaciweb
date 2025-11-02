@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="principal.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagem.png.png">
+</head>
+<body>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <h1 class="logo-titulo">VACIWEB</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><button type="button" onclick="goHome()" class="inicio-btn">Sair</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="mascote-container">
+        <img src="../img/imagem.png.png" alt="Mascote" class="logo-header">
+        <h2 class="mascote-titulo">Vacine-se para um Futuro Mais<br><span>Saudável</span></h2>
+    </div>
+
+    <p class="mascote-texto-baixo">
+        Manter suas vacinas em dia é um ato de cuidado com você e com todos ao <br> seu redor. Proteja-se e ajude a prevenir doenças.
+    </p>
+
+    <!-- CARROSSEL -->
+    <div class="carousel-container">
+        <img src="../img/movimento vacinaçao.png" class="carousel-image active" alt="Vacinação 1">
+        <img src="../img/bannerinfluenza.png" class="carousel-image" alt="Vacinação 2">
+        <img src="../img/hp.jpeg" class="carousel-image" alt="Vacinação 3">
+        <img src="../img/vacina.jpeg" class="carousel-image" alt="Vacinação 4">
+        <img src="../img/covid.png" class="carousel-image" alt="Vacinação 5">
+    </div>
+
+    <div class="bloco-curvo">
+        <div class="titulo-container">
+            <img src="https://www.gov.br/saude/pt-br/vacinacao/vacinacao/@@govbr.institucional.banner/b524fbc5-07d8-445a-a44a-76f439ddebb2/@@images/ab9027ce-3707-498a-bb89-3a4eb806f5ca.gif" alt="Linha decorativa" class="linha-decorativa">
+            <h3 class="titulo-secundario">Calendário Nacional de Vacinação</h3>
+        </div>
+
+    <p class="texto-descritivo">
+        O Calendário Nacional de Vacinação do Sistema Único de Saúde (SUS) é uma estratégia essencial para a proteção da saúde coletiva no Brasil.
+    </p>
+
+    <div class="botoes-container">
+        <button onclick="irbebe()" class="btn-img"><img src="../img/1-removebg-preview.png"></button>
+        <button onclick="iradolescente()" class="btn-img"><img src="../img/2-removebg-preview.png"></button>
+        <button onclick="iradulto()" class="btn-img"><img src="../img/3-removebg-preview.png"></button>
+        <button onclick="irgestante()" class="btn-img"><img src="../img/4-removebg-preview.png"></button>
+    </div>
+   
+    <div>
+        <button onclick="irJogo()" class="btn-img" id="btnJogo">
+            <img src="../img/acesse.png" alt="Botão Jogo">
+        </button>
+    </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Vaciweb. Todos os direitos reservados.</p>
+</footer>
+
+<script src="../js/script.js"></script>
+
+</body>
+</html>
